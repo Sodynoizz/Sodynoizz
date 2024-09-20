@@ -8,7 +8,6 @@
 </p>
 
 <p align="center">
-    <a href="https://www."><img src="https://img.icons8.com/?size=32&id=37326&format=png&color=5AA3F2FF"></a>
     <a href="https://www.facebook.com/chorasit.apilardmongkol.79"><img src="https://img.icons8.com/?size=32&id=118467&format=png&color=5AA2F2FF"</a>
     <a href="https://twitter.com/sodynoizz"><img src="https://img.icons8.com/?size=32&id=phOKFKYpe00C&format=png&color=5AA3F2FF"></a>
     <a href="https://discord.com/users/880358178687184896"><img src="https://img.icons8.com/?size=32&id=30888&format=png&color=5AA3F2FF"></a>
