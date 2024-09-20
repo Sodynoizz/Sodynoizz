@@ -1,4 +1,11 @@
-﻿<p align="center">
+﻿<!-- TODO: Image Profile >
+<!-- <p align="center">
+    <a href="https://github.com/Sodynoizz">
+        <img src="https://i.imgur.com/0tKJbrF.png" alt="sodynoizz profile" width="192"/>
+    </a>
+</p> -->
+
+<p align="center">
     <a href="https://github.com/Sodynoizz">
         <img src="https://shorturl.at/6yscb">
     </a>
@@ -26,9 +33,9 @@
     <a href="https://github.com/triamudomcmc/tucmc-site"><img width="250" src="https://github-readme-stats.vercel.app/api/pin?username=triamudomcmc&repo=tucmc-site&theme=blueberry&hide_border=true" alt="schedule-generator"></a>
     <a href="https://github.com/triamudomcmc/schedule-generator"><img width="250" src="https://github-readme-stats.vercel.app/api/pin?username=triamudomcmc&repo=schedule-generator&theme=blueberry&hide_border=true" alt="tucmc-site"></a>
     <a href="https://github.com/Sodynoizz/music-analysis"><img width="250" src="https://github-readme-stats.vercel.app/api/pin?username=sodynoizz&repo=music-analysis&theme=blueberry&hide_border=true" alt="music-analysis"></a>
-    <a href="https://github.com/Sodynoizz/linktree"><img width="250" src="https://github-readme-stats.vercel.app/api/pin?username=sodynoizz&repo=linktree&theme=blueberry&hide_border=true" alt="music-analysis"></a>
-    <a href="https://github.com/Sodynoizz/diseasebot-remake"><img width="250" src="https://github-readme-stats.vercel.app/api/pin?username=sodynoizz&repo=diseasesbot-remake&theme=blueberry&hide_border=true" alt="music-analysis"></a>
-    <a href="https://github.com/Sodynoizz/competitive-programming"><img width="250" src="https://github-readme-stats.vercel.app/api/pin?username=sodynoizz&repo=competitive-programming&theme=blueberry&hide_border=true" alt="music-analysis"></a>
+    <a href="https://github.com/Sodynoizz/linktree"><img width="250" src="https://github-readme-stats.vercel.app/api/pin?username=sodynoizz&repo=linktree&theme=blueberry&hide_border=true" alt="linktree"></a>
+    <a href="https://github.com/Sodynoizz/diseasebot-remake"><img width="250" src="https://github-readme-stats.vercel.app/api/pin?username=sodynoizz&repo=diseasesbot-remake&theme=blueberry&hide_border=true" alt="diseasesbot-remake"></a>
+    <a href="https://github.com/Sodynoizz/competitive-programming"><img width="250" src="https://github-readme-stats.vercel.app/api/pin?username=sodynoizz&repo=competitive-programming&theme=blueberry&hide_border=true" alt="competitive-programming"></a>
 </section>
 
 
