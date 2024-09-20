@@ -36,14 +36,14 @@
 <h2>💻 Stats and Activities</h2>
 
 <h3>🔥 Streak Stats</h3>
-<a href="https://git.io/streak-stats"><img src="https://sodynoizz-readme-streak-stats.vercel.app?user=Sodynoizz&theme=blueberry&hide_border=true" alt="GitHub Streak" /></a>
+<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="https://sodynoizz-readme-streak-stats.vercel.app?user=Sodynoizz&theme=blueberry&hide_border=true" alt="GitHub Streak" /></a>
 
 <h3>💻 GitHub Profile Stats</h3>
-<a href="https://git.io/streak-stats"><img src="https://github-readme-stats.vercel.app/api?username=Sodynoizz&show_icons=true&theme=blueberry&hide_border=true" alt="GitHub Streak" height="192px" /></a>
-<a href="https://git.io/streak-stats"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sodynoizz&langs_count=8&theme=blueberry&layout=compact&hide_border=true&hide=Jupyter%20Notebook,Roff" alt="GitHub Streak" height="192px" /></a>
+<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="https://github-readme-stats.vercel.app/api?username=Sodynoizz&show_icons=true&theme=blueberry&hide_border=true" alt="GitHub Streak" height="192px" /></a>
+<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sodynoizz&langs_count=8&theme=blueberry&layout=compact&hide_border=true&hide=Jupyter%20Notebook,Roff" alt="GitHub Streak" height="192px" /></a>
 </br>
 
-<a href="https://git.io/streak-stats"><img src="https://github-readme-activity-graph.vercel.app/graph/?username=sodynoizz&theme=tokyo-night&hide_border=true&grid=false" alt="GitHub Streak"/></a>
+<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="https://github-readme-activity-graph.vercel.app/graph/?username=sodynoizz&theme=tokyo-night&hide_border=true&grid=false" alt="GitHub Streak"/></a>
 
 </section>
 
