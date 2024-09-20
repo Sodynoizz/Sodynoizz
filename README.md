@@ -44,7 +44,7 @@
 <a href="https://git.io/streak-stats"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sodynoizz&langs_count=8&theme=blueberry&layout=compact&hide_border=true&hide=Jupyter%20Notebook,Roff" alt="GitHub Streak" height="192px" /></a>
 </br>
 
-<a href="https://git.io/streak-stats"><img src="https://github-readme-activity-graph.vercel.app/graph/?username=sodynoizz&theme=tokyo-night&hide_border=false&grid=false" alt="GitHub Streak"/></a>
+<a href="https://git.io/streak-stats"><img src="https://github-readme-activity-graph.vercel.app/graph/?username=sodynoizz&theme=tokyo-night&hide_border=true&grid=false" alt="GitHub Streak"/></a>
 
 </section>
 
