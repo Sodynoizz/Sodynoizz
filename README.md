@@ -101,4 +101,8 @@
 
 </section>
 
+<!-- test -->
+<a href="#">
+<img alt="views" title="GitHub profile views" src="http://sodynoizz-github-counter.liveblog365.com/"/></a>
+
 <p align="center">- &copy; Sodynoizz 2024 -</p>
