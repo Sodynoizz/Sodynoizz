@@ -83,7 +83,6 @@
       <a href="#"><img alt="Wordpress" src="https://img.shields.io/badge/Wordpress-21759B?logo=wordpress&logoColor=white&style=for-the-badge"></a>
   </p>
 
-    
 </section>
 
 <section>
@@ -97,7 +96,7 @@
 <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sodynoizz&langs_count=8&theme=blueberry&layout=compact&hide_border=true&hide=Jupyter%20Notebook,Roff" alt="GitHub Streak" height="192px" /></a>
 </br>
 
-<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="https://github-readme-activity-graph.vercel.app/graph/?username=sodynoizz&theme=tokyo-night&hide_border=true&grid=false" alt="GitHub Streak"/></a>
+<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="https://github-readme-activity-graph.vercel.app/graph/?username=sodynoizz&theme=tokyo-night&hide_border=true&grid=true&custom_title=Sodynoizz's%20Contribution%20Graph&bg_color=252939&line=26e8a6&point=24b388&color=83aafe" alt="GitHub Streak"/></a>
 
 </section>
 
