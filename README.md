@@ -44,8 +44,8 @@
 
 <section>
     <h2>🖥️ Tech Stack</h2>
+    <h3>• Programming and markup language</h3>
     <p>
-    <h3>Programming and markup language</h3>
       <a href="#"><img alt="C" src="https://custom-icon-badges.demolab.com/badge/C-03599C.svg?logo=c-in-hexagon&logoColor=white&style=for-the-badge"></a>
       <a href="https://github.com/search?q=user%3Asodynoizz+language%3AC%2B%2B+&type=repositories"><img alt="C++" src="https://custom-icon-badges.demolab.com/badge/C++-9C033A.svg?logo=cpp2&logoColor=white&style=for-the-badge"></a>
       <a href="https://github.com/search?q=user%3Asodynoizz+language%3ACSS+&type=repositories"><img alt="CSS" src="https://img.shields.io/badge/CSS-1572B6.svg?logo=css3&logoColor=white&style=for-the-badge"></a>
@@ -65,7 +65,7 @@
       <a href="https://github.com/search?q=owner%3ASodynoizz+language%3ATypeScript+&type=repositories"><img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-007ACC.svg?logo=typescript&logoColor=white&style=for-the-badge"></a>
   </p>
 
-  <h3>Framework and Libraries</h3>
+  <h3>• Framework and Libraries</h3>
    <p>
       <a href="#"><img alt="Arduino" src="https://img.shields.io/badge/-Arduino-00979D?logo=Arduino&logoColor=white&style=for-the-badge"></a>
       <a href="#"><img alt="Bootstrap" src="https://img.shields.io/badge/Bootstrap-7952B3.svg?logo=bootstrap&logoColor=white&style=for-the-badge"></a>
