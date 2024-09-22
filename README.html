@@ -1,31 +1,395 @@
-﻿<!-- TODO: Image Profile >
+<!DOCTYPE html>
+<html>
+<head>
+<title>README.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+	background-color: #000000;
+	color: #ffffff;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+<link rel="stylesheet" href="file:///d%3A/wtf/Sodynoizz/main.css" type="text/css">
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<!-- TODO: Image Profile >
 <!-- <p align="center">
     <a href="https://github.com/Sodynoizz">
         <img src="https://i.imgur.com/0tKJbrF.png" alt="sodynoizz profile" width="192"/>
     </a>
 </p> -->
-
 <p align="center">
     <a href="https://github.com/Sodynoizz">
         <img src="https://shorturl.at/6yscb">
     <a href="https://github.com/Sodynoizz">
     </a>
-        <img src="https://shorturl.at/n6xVu" />
+   		<img src="https://shorturl.at/n6xVu" />
     </a>
 </p>
-
 <p align="center">
     <a href="https://www.facebook.com/chorasit.apilardmongkol.79"><img src="https://img.icons8.com/?size=32&id=118467&format=png&color=5AA2F2FF"</a>
     <a href="https://twitter.com/sodynoizz"><img src="https://img.icons8.com/?size=32&id=phOKFKYpe00C&format=png&color=5AA3F2FF"></a>
     <a href="https://discord.com/users/880358178687184896"><img src="https://img.icons8.com/?size=32&id=30888&format=png&color=5AA3F2FF"></a>
     <a href="https://www.instagram.com/sodynoizz._"><img src="https://img.icons8.com/?size=32&id=32309&format=png&color=5AA3F2FF"></a>
 </p>
-
 </br>
-
 <section>  
-  <h2>📘 My Contribution Project</h2>
-
+  <h2>📘 My Contribution Project</h2></br>
   <p align="left">
     <a href="https://github.com/triamudomcmc/clubreg"><img width="250" src="https://sodynoizz-readme-stats.vercel.app/api/pin?username=triamudomcmc&repo=clubreg&theme=blueberry&hide_border=true" alt="clubreg"></a>
     <a href="https://github.com/triamudomcmc/readme-typing-svg"><img width="250" src="https://sodynoizz-readme-stats.vercel.app/api/pin?username=triamudomcmc&repo=openhouse2024&theme=blueberry&hide_border=true" alt="openhouse2024"></a>
@@ -37,15 +401,13 @@
     <a href="https://github.com/Sodynoizz/diseasebot-remake"><img width="250" src="https://sodynoizz-readme-stats.vercel.app/api/pin?username=sodynoizz&repo=diseasesbot-remake&theme=blueberry&hide_border=true&show_description=false" alt="diseasesbot-remake"></a>
     <a href="https://github.com/Sodynoizz/competitive-programming"><img width="250" src="https://sodynoizz-readme-stats.vercel.app/api/pin?username=sodynoizz&repo=competitive-programming&theme=blueberry&hide_border=true&show_description=false" alt="competitive-programming"></a>
   </p>
-
-<a href="https://github.com/Sodynoizz?tab=repositories&sort=Name"><img alt="All Repositories" title="All Repositories" src="https://custom-icon-badges.demolab.com/badge/-Click%20Here%20For%20All%20My%20Repos-1F222E?style=for-the-badge&logoColor=cyan&logo=repo"/></a>
-
+<p><a href="https://github.com/Sodynoizz?tab=repositories&sort=Name"><img alt="All Repositories" title="All Repositories" src="https://custom-icon-badges.demolab.com/badge/-Click%20Here%20For%20All%20My%20Repos-252939?style=for-the-badge&logoColor=cyan&logo=repo"/></a></p>
 </section>
-
 <section>
+	</br>
     <h2>🖥️ Tech Stack</h2>
-    <h3>• Programming and markup language</h3>
-    <p>
+    <p>	</br>
+    <h3>Programming and markup language</h3></br>
       <a href="#"><img alt="C" src="https://custom-icon-badges.demolab.com/badge/C-03599C.svg?logo=c-in-hexagon&logoColor=white&style=for-the-badge"></a>
       <a href="https://github.com/search?q=user%3Asodynoizz+language%3AC%2B%2B+&type=repositories"><img alt="C++" src="https://custom-icon-badges.demolab.com/badge/C++-9C033A.svg?logo=cpp2&logoColor=white&style=for-the-badge"></a>
       <a href="https://github.com/search?q=user%3Asodynoizz+language%3ACSS+&type=repositories"><img alt="CSS" src="https://img.shields.io/badge/CSS-1572B6.svg?logo=css3&logoColor=white&style=for-the-badge"></a>
@@ -63,9 +425,8 @@
       <a href="#"><img alt="SQL" src="https://custom-icon-badges.demolab.com/badge/SQL-025E8C.svg?logo=database&logoColor=white&style=for-the-badge"></a>
       <a href="#"><img alt="SVG+XML" src="https://img.shields.io/badge/SVG%2BXML-e0982c.svg?logo=svg&logoColor=white&style=for-the-badge"></a>
       <a href="https://github.com/search?q=owner%3ASodynoizz+language%3ATypeScript+&type=repositories"><img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-007ACC.svg?logo=typescript&logoColor=white&style=for-the-badge"></a>
-  </p>
-
-  <h3>• Framework and Libraries</h3>
+  </p></br>
+  <h3>Framework and Libraries</h3></br>
    <p>
       <a href="#"><img alt="Arduino" src="https://img.shields.io/badge/-Arduino-00979D?logo=Arduino&logoColor=white&style=for-the-badge"></a>
       <a href="#"><img alt="Bootstrap" src="https://img.shields.io/badge/Bootstrap-7952B3.svg?logo=bootstrap&logoColor=white&style=for-the-badge"></a>
@@ -74,8 +435,6 @@
       <a href="#"><img alt="Firebase" src="https://img.shields.io/badge/firebase-FFA611.svg?logo=firebase&style=for-the-badge"></a>
       <a href="#"><img alt="Flask" src="https://img.shields.io/badge/Flask-000000.svg?logo=flask&logoColor=white&style=for-the-badge"></a>
       <a href="#"><img alt="GitHub Actions" src="https://img.shields.io/badge/GitHub%20Actions-2671E5.svg?logo=github%20actions&logoColor=white&style=for-the-badge"></a>
-      <a href="#"><img alt="Nest.JS" src="https://img.shields.io/badge/Nest.js-e0224f.svg?logo=NestJS&logoColor=white&style=for-the-badge"></a>
-      <a href="#"><img alt="Next.JS" src="https://img.shields.io/badge/Next.js-000000.svg?logo=Next.js&logoColor=white&style=for-the-badge"></a>
       <a href="#"><img alt="NumPy" src="https://img.shields.io/badge/Numpy-013243.svg?logo=numpy&logoColor=white&style=for-the-badge"></a>
       <a href="#"><img alt="Pandas" src="https://img.shields.io/badge/Pandas-150458.svg?logo=pandas&logoColor=white&style=for-the-badge"></a>
       <a href="#"><img alt="Pytest" src="https://img.shields.io/badge/Pytest-0A9EDC.svg?logo=pytest&logoColor=white&style=for-the-badge"></a>
@@ -84,26 +443,23 @@
       <a href="#"><img alt="TensorFlow" src="https://img.shields.io/badge/TensorFlow-FF6F00.svg?logo=TensorFlow&logoColor=white&style=for-the-badge"></a>
       <a href="#"><img alt="Wordpress" src="https://img.shields.io/badge/Wordpress-21759B?logo=wordpress&logoColor=white&style=for-the-badge"></a>
   </p>
-
 </section>
-
 <section>
-<h2>💻 Stats and Activities</h2>
-
-<h3>🔥 Streak Stats</h3>
+</br>
+<h2>💻 Stats and Activities</h2></br>
+<h3>🔥 Streak Stats</h3></br>
 <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="https://sodynoizz-readme-streak-stats.vercel.app?user=Sodynoizz&theme=blueberry&hide_border=true" alt="GitHub Streak" /></a>
-
-<h3>💻 GitHub Profile Stats</h3>
+</br></br><h3>💻 GitHub Profile Stats</h3></br>
 <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="https://sodynoizz-readme-stats.vercel.app/api?username=Sodynoizz&show_icons=true&theme=blueberry&hide_border=true" alt="GitHub Streak" height="192px" /></a>
 <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sodynoizz&langs_count=8&theme=blueberry&layout=compact&hide_border=true&hide=Jupyter%20Notebook,Roff" alt="GitHub Streak" height="192px" /></a>
 </br>
-
-<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="https://github-readme-activity-graph.vercel.app/graph/?username=sodynoizz&theme=tokyo-night&hide_border=true&grid=true&custom_title=Sodynoizz's%20Contribution%20Graph&bg_color=252939&line=26e8a6&point=24b388&color=83aafe" alt="GitHub Streak"/></a>
-
+<p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="https://github-readme-activity-graph.vercel.app/graph/?username=sodynoizz&theme=tokyo-night&hide_border=true&grid=true&custom_title=Sodynoizz's%20Contribution%20Graph&bg_color=252939&line=26e8a6&point=24b388&color=83aafe" alt="GitHub Streak"/></a></p>
 </section>
-
 <img src="wave.svg" />
 <h5 align="center">- &copy; Sodynoizz 2024 -</h5>
 <section>
 <h2></h2>
 </section>
+
+</body>
+</html>
